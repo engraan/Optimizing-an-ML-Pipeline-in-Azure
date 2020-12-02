@@ -5,7 +5,7 @@ This project is part of the Udacity Azure ML Nanodegree. In this project, we bui
 ## Summary
 The dataset contains about 32950 rows × 21 columns which was collected by Portuguese marketing institution through marketing campaigns using phone calls.  Using classification we wanted to predict weather a customer will subscribe or not based on this historic data.
 The best performing model was a VotingEnsemble through AzureML with an accuracy of 91.78. The goal of ensemble methods is to combine the predictions of several base estimators built with a given learning algorithm in order to improve generalizability / robustness over a single estimator. The HyperDrive method has given an accuracy of 91.09 which is closed to the one using AzureML.
-❮img src="images/Accuracy%20Perfomance.jpg" width="100" ❯
+![](images/Accuracy%20Perfomance.jpg)
  
 ## Scikit-learn Pipeline
 Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.
@@ -24,5 +24,5 @@ In HyperDrive packages, Hyperparameters are adjustable parameters you choose for
 What are some areas of improvement for future experiments? Why might these improvements help the model?
 Using different parameter sampling techniques i.e. Bayesian sampling and Grid sampling. The BanditPolicy parameters can also be adjusted for better performance. 
 As we see in the feature importance summary graph, we can see that that some of the features has more contribution to the negative classification. Some more positive classified data should be collected for training to get more balanced data set and it can also help in model performance.
- 
+ ![](images/Summary%20Features.jpg)
 
