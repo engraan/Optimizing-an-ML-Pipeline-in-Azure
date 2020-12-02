@@ -5,6 +5,7 @@ This project is part of the Udacity Azure ML Nanodegree. In this project, we bui
 ## Summary
 The dataset contains about 32950 rows × 21 columns which was collected by Portuguese marketing institution through marketing campaigns using phone calls.  Using classification we wanted to predict weather a customer will subscribe or not based on this historic data.
 The best performing model was a VotingEnsemble through AzureML with an accuracy of 91.78. The goal of ensemble methods is to combine the predictions of several base estimators built with a given learning algorithm in order to improve generalizability / robustness over a single estimator. The HyperDrive method has given an accuracy of 91.09 which is closed to the one using AzureML.
+❮img src="images/Accuracy%20Perfomance.jpg" width="100" ❯
  
 ## Scikit-learn Pipeline
 Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.
