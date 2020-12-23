@@ -11,6 +11,9 @@ The best performing model was a VotingEnsemble through AzureML with an accuracy 
 Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.
 Data was imported using TabularDatasetFactory. After feature engineering, 1 hot encoding was performed to convert non-numerical features to 1- hot encoding. The data was splitted to train and test datasets. Hyperdrive was used using SDK to perform hyperprameter tuning and then LogisticRegression was applied.
 I have used Randon sampling. Random sampling supports discrete and continuous hyperparameters. It supports early termination of low-performance runs. Some users do an initial search with random sampling and then refine the search space to improve results.
+In machine learning for hyper parameter optimization Random Parameter Sampling is less expensive in computation as a subset of combinations are used. While GridParameterSampling is a great technique but it takes all the possible combinations and hence make it is computationally expensive.
+Using the Random Search technique Random Parameter Sampling rely on randomness which give the best results faster.
+GridParameterSampling is good for spot-checking combinations and perform well generally but Random search is best to discover hyper parameter combinations which cannot be guessed intuitively.
 For early stopping policy, I have used Bandit policy. Bandit policy is based on slack factor/slack amount and evaluation interval. Bandit terminates runs where the primary metric is not within the specified slack factor/slack amount compared to the best performing run.
 
 ## AutoML
